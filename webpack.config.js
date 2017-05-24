@@ -16,7 +16,7 @@ module.exports = function (env) {
         new webpack.optimize.CommonsChunkPlugin({
             filename: "vendor-react.js",
             name: "vendor-react",
-            chunks: ["vendor-react", "game"]
+            chunks: ["vendor-react"]
         }),
         new webpack.optimize.CommonsChunkPlugin({
             filename: "common.js",
@@ -49,7 +49,7 @@ module.exports = function (env) {
                     loader: "awesome-typescript-loader",
                     test: /\.tsx?$/,
                 },
-                                {
+                {
                     test: /\.css$/,
                     use: ExtractTextPlugin.extract({
                         fallback: "style-loader",
