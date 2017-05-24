@@ -25,5 +25,4 @@ export class Button extends React.Component<IPropertyButton, undefined> {
     }
 }
 
-export * from "./IPropertyButton";
 export default Button;
